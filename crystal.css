@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue";
+  background-color: red;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+a h3 {
+  text-decoration: underline;
+}
+
+p {
+  text-indent: 2em;
+  font-family: "Times New Roman";
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+#bigwrapper {
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+}
+
+#wrapper {
+  padding: 1em 5em 2em 2em;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+
+@media (max-width: 1007px) {
+  #grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 604px) {
+  #grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+img {
+  width: 100%;
+  max-width: 250px;
+}
+
+@media (max-width: 1007px) {
+  img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 604px) {
+  img {
+    max-width: 350px;
+  }
+}
+
+.movie {
+  padding: 1em;
+  border-style: dashed;
+}
+
+#sidebar {
+  position: fixed;
+  right: 0;
+  min-height: 100%;
+  padding: 2.5em;
+  text-indent: 0;
+  justify-content: center;
+  align-content: center;
+}
+
+#sidebar p {
+  text-indent: 0;
+}
+
+#footer {
+  bottom: 10%;
+  max-width: 90%;
+  max-height: 5%;
+}

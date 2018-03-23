@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  background: red;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+#header {
+  padding: 1.5em;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1em;
+  font-family: "Garamond";
+  justify-items: center;
+  align-items: center;
+}
+
+#openp {
+  max-width: 70%;
+  font-size: 1.2em;
+}
+
+.moviegrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3em 0 3em 3em;
+}
+
+#info p,
+#info h3 {
+  border-bottom: solid black 1px;
+}
+
+#info {
+  max-width: 70%;
+  border: 1px solid black;
+  padding: 1em;
+}
+
+.boldtext {
+  font-weight: 700;
+}
+
+#coptix {
+  border: 1px solid black;
+  max-width: 70%;
+  padding: 1em;
+}
+
+#coptix ul {
+  list-style-type: none;
+}
+
+#coptix h3,
+.table {
+  border-bottom: solid black 1px;
+}
+
+#coptix ul {
+  text-transform: capitalize;
+}
+
+#coptix a {
+  color: black;
+  font-style: italic;
+}
+
+#coptix a:hover {
+  color: yellow;
+}
+
+#coptix li {
+  padding: 0.3em 0 0.3em 0;
+  font-size: 1.2em;
+}
+
+#coptix p {
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.movie {
+  padding: 3em 0 3em 3em;
+  text-decoration: none;
+  border-bottom: solid black 1px;
+}
+
+.movie:hover {
+  animation: movie;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 100ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes movie {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: orange;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  max-width: 500px;
+}
+
+#title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5wh;
+  height: 5vh;
+  font-size: 4em;
+}
+
+.purchase {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 4em;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.purchase a {
+  color: black;
+  font-style: italic;
+}
+
+.purchase a:hover {
+  color: yellow;
+}
+
+.movie h3,
+.movie h5 {
+  font-size: 2em;
+  font-family: "Garamond";
+  display: inline;
+  color: black;
+}
+
+#footer {
+  position: fixed;
+  max-width: 75px;
+  bottom: 1%;
+  right: 1%;
+}
+
+@media (max-width: 1007px) {
+  .table {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 604px) {
+  #header {
+    grid-template-columns: 1fr;
+  }
+  #openp {
+    max-width: 100%;
+  }
+  .moviegrid {
+    grid-template-columns: 1fr;
+    padding: 1em 1em 0 1em;
+  }
+  .movie {
+    font-size: 0.75em;
+  }
+  #info {
+    max-width: 100%;
+  }
+  #coptix {
+    max-width: 100%;
+  }
+}
